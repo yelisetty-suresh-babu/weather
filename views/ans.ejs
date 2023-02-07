@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <!-- <img class="icon" src="https://openweathermap.org/img/wn/04n@2x.png" alt=""> -->
+            <img class="icon" src=<%=icon%> alt="">
+
+            <h3 class="city">
+                <%=city_name%>
+            </h3>
+            <h1 class="temp">
+                <%=tempa%>
+            </h1>
+            <div class="feels">
+
+            </div>
+            <div class="remain">
+                <h3>
+                    <%=desc%>
+                </h3>
+                <p class="yo">Max-Temp : <%=max_t%>
+                </p>
+                <p>Min-Temp : <%=min_t%>
+                </p>
+                <p>Humidity : <%=hum%>
+                </p>
+                <p>Wind-Speed : <%=ws%>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <form action="/infor" method="post">
+
+        <button class="sub" type="submit">Refresh</button>
+    </form>
+</body>
+
+</html>
